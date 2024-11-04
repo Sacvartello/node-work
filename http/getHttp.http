@@ -1,7 +1,7 @@
 POST http://localhost:5000/users HTTP/1.1
 
 {
-    "username": "John",
-    "lastName":"Wick",
+    "username": "Stefan",
+    "lastName":"Chubur",
     "email":"ekuiwdgjhew@gmail.com"
 }

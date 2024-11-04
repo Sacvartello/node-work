@@ -19,9 +19,9 @@ function reqwList (req,res){
             })
             req.on('end', ()=>{
                 const usObj = JSON.parse(str)
-                res.statusCode = 200;
-                res.statusMessage = 'OK';
-                res.end(`${usObj.username} ${usObj.lastName}`);
+                res.statusCode = 201;
+                res.statusMessage = 'Created';
+                res.end(`${usObj.username} ${usObj.lastName}, ви успішно зареєстровані!`);
             })
         }
     }
