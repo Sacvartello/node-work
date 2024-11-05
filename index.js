@@ -1,7 +1,7 @@
 const http = require('http')
 const exp = require('express')
 const app = exp()
-
+const bodyParser = exp.json()
 const server = http.createServer(app)
 
 // function reqwList (req,res){
@@ -31,4 +31,7 @@ server.listen(5000)
 
 app.get('/about',(req, res)=>{
     res.status(200).send('this is page about ...')
+})
+app.post('/users',bodyParser,(req,res,next)=>{
+    res.status(201).send(`Привіт ${req.body.username} ${req.body.lastName}`)
 })

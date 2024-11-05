@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Sacvartello/node-work#readme",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "yup": "^1.4.0"
   }
 }
